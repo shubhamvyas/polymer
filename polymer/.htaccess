@@ -1,0 +1,13 @@
+
+#
+ErrorDocument 403 /polymer/polymer/errors/403.html
+ErrorDocument 404 /polymer/polymer/errors/404.html
+#
+#
+#RewriteEngine On
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
+#
+#

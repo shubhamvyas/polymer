@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Fabio"
+  ],
+  "description": "Personal Website",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "chrisvfabio.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.5.1",
+    "core-elements": "polymer/core-elements#~0.5.1",
+    "paper-elements": "polymer/paper-elements#~0.5.1"
+  }
+}
