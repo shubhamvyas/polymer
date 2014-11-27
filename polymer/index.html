@@ -7,9 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-		<link rel="import" href="bower_components/polymer/polymer.html">
+		<link rel="import" href="bower_components/components/polymer/polymer.html">
+		<!-- 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		 -->
 		<link rel="import" href="bower_components/components/font-roboto/roboto.html">
 
+		<link rel="import" href="bower_components/components/core-header-panel/core-header-panel.html">
+		<link rel="import" href="bower_components/components/core-toolbar/core-toolbar.html">
+		
+		
 		<title>Chris Fabio</title>
 		<style>
 			html, body{
@@ -18,9 +25,48 @@
 				background-color: #F5F5F5;
 				font-family: 'RobotoDraft', sans-serif;
 			}
+			core-header-panel {
+				height: 100%;
+			}
+			.theme  {
+				color: #00ACC1;
+			}
+			.light {
+				color: #F5F5F5;
+			}
+			.title {
+				font-size: 42px;
+				font-weight: 400;
+			}
+			.center-text {
+				text-align: center;
+			}
+			core-toolbar {
+				background-color: #282828;
+			}
+			#content {
+				padding: 5%;
+				font-size: 24px;
+				height: 30%;
+			}
 		</style>
 	</head>
-	<body unresolved>
-		<h1>Hello World</h1>
+	<body unresolved fullbleed layout vertical>
+		
+		<core-header-panel flex>
+			<core-toolbar>
+				<div class="title center-text" flex><span class="light">Chris</span> <span class="theme">Fabio</span></div>
+			</core-toolbar>
+
+			<div vertical layout center-justified id="content" class="center-text">
+
+
+				<div flex one style=" padding: 16px;">
+					Website Under Construction
+				</div>
+			</div>
+		</core-header-panel>
+	
+
 	</body>
 </html>
